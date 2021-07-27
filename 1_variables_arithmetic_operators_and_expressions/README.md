@@ -8,7 +8,6 @@
 ![problem](media/Problem.png)
 
 
-
 - **What is known about the problem:**
 
     - The length of the door in meters.
