@@ -47,10 +47,10 @@ public class main {
         System.out.println('\n' + "------------------------------------------------------------------" + '\n');
         
         double wall_height_in_cm = (wall_height*100)/1;
-        System.out.println("The height of the wall in centimeters is: " + wall_height_in_cm + " centímeters" + '\n');
+        System.out.println("The height of the wall in centimeters is: " + wall_height_in_cm + " centimeters" + '\n');
         
         double pulley_radius = diameter_pulley_cms/2;
-        System.out.println("The pulley radius is: " + pulley_radius + " centímeters" + '\n');
+        System.out.println("The pulley radius is: " + pulley_radius + " centimeters" + '\n');
         
         //---------------------------------------------------------------------------------------------------------------
         
