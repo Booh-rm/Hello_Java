@@ -34,7 +34,7 @@ public class persons {
         
         //------------------------------------------------------------------------------------------------------------------
         
-        String dominio = "@frontiers.co";
+        String domain = "@frontiers.co";
         int index = 2;
         char[] chararray = email.toCharArray();
         
@@ -45,7 +45,7 @@ public class persons {
             counter_2++;
             pos_2 = email.indexOf(quantity_m,pos_2+1);
 
-            if (counter_2 >= 3 && email.contains(dominio)==false){
+            if (counter_2 >= 3 && email.contains(domain)==false){
                 System.out.println('\n' + "¡¡¡ Error !!!" + '\n');
                 System.out.println("The mail contains 3 or more repetitions of the letter m." + '\n');
                 return false;
@@ -54,14 +54,14 @@ public class persons {
         
         //------------------------------------------------------------------------------------------------------------------
 
-        if (chararray[index]==character && email.contains(dominio)==false){
+        if (chararray[index]==character && email.contains(domain)==false){
             System.out.println('\n' + "¡¡¡ Erroneous mail !!!" + '\n');
             return false;
         }
         
         //------------------------------------------------------------------------------------------------------------------
 
-        if (email.contains(dominio) == false){
+        if (email.contains(domain) == false){
             System.out.println('\n' + "¡¡¡ Erroneous mail !!!" + '\n');
             return false;
         }
@@ -72,21 +72,21 @@ public class persons {
         String m = "+";
         String ampersand = "&";
 
-        if(email.contains(equal) == true && email.contains(dominio) == false){
+        if(email.contains(equal) == true && email.contains(domain) == false){
             System.out.println("¡¡¡ Erroneous mail !!!" + '\n');
             return false;
         }
         
         //------------------------------------------------------------------------------------------------------------------
 
-        if (email.contains(m) == true && email.contains(dominio) == false){
+        if (email.contains(m) == true && email.contains(domain) == false){
             System.out.println("¡¡¡ Erroneous mail !!!" + '\n');
             return false;
         }
 
         //------------------------------------------------------------------------------------------------------------------
 
-        if (email.contains(ampersand) == true && email.contains(dominio) == false){
+        if (email.contains(ampersand) == true && email.contains(domain) == false){
             System.out.println("¡¡¡ Erroneous mail !!!" + '\n');
             return false;
         }
