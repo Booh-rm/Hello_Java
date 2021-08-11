@@ -1,0 +1,10 @@
+Name employee 1▬1234-1▬Salary employee 1▬Last name employee 1▬Male▬0012345678-1▬emailEmployee1@email.com▬Job title employee 1▬Level A▬123456-1
+Name employee 2▬1234-2▬Salary employee 2▬Last name employee 2▬Male▬0012345678-2▬emailEmployee2@email.com▬Job title employee 2▬Level A▬123456-2
+Name employee 3▬1234-3▬Salary employee 3▬Last name employee 3▬Male▬0012345678-3▬emailEmployee3@email.com▬Job title employee 3▬Level A▬123456-3
+Name employee 4▬1234-4▬Salary employee 4▬Last name employee 4▬Male▬0012345678-4▬emailEmployee4@email.com▬Job title employee 4▬Level A▬123456-4
+Name employee 5▬1234-5▬Salary employee 5▬Last name employee 5▬Male▬0012345678-5▬emailEmployee5@email.com▬Job title employee 5▬Level A▬123456-5
+Name employee 6▬1234-6▬Salary employee 6▬Last name employee 6▬Male▬0012345678-6▬emailEmployee6@email.com▬Job title employee 6▬Level A▬123456-6
+Name employee 7▬1234-7▬Salary employee 7▬Last name employee 7▬Male▬0012345678-7▬emailEmployee7@email.com▬Job title employee 7▬Level A▬123456-7
+Name employee 8▬1234-8▬Salary employee 8▬Last name employee 8▬Male▬0012345678-8▬emailEmployee8@email.com▬Job title employee 8▬Level A▬123456-8
+Name employee 9▬1234-9▬Salary employee 9▬Last name employee 9▬Male▬0012345678-9▬emailEmployee9@email.com▬Job title employee 9▬Level A▬123456-9
+Name employee 10▬1234-10▬Salary employee 10▬Last name employee 10▬Male▬0012345678-10▬emailEmployee10@email.com▬Job title employee 10▬Level A▬123456-10

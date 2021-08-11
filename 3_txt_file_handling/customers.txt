@@ -1,0 +1,10 @@
+name customer 1▬Address customer 1▬Phone customer 1▬Last name customer 1▬Male▬1234567890-1▬emailCustomer1@email.com▬123456-1
+name customer 2▬Address-Customer 2▬Phone Customer 2▬Last name customer 2▬Female▬1234567890-2▬emailCustomer2@email.com▬123456-2
+name customer 3▬Address-Customer 3▬Phone Customer 3▬Last name customer 3▬Male▬1234567890-3▬emailCustomer3@email.com▬123456-3
+name customer 4▬Address-Customer 4▬Phone Customer 4▬Last name customer 4▬Female▬1234567890-4▬emailCustomer4@email.com▬123456-4
+name customer 5▬Address-Customer 5▬Phone Customer 5▬Last name customer 5▬Male▬1234567890-5▬emailCustomer5@email.com▬123456-5
+name customer 6▬Address-Customer 6▬Phone Customer 6▬Last name customer 6▬Female▬1234567890-6▬emailCustomer6@email.com▬123456-6
+name customer 7▬Address-Customer 7▬Phone Customer 7▬Last name customer 7▬Male▬1234567890-7▬emailCustomer7@email.com▬123456-7
+name customer 8▬Address-Customer 8▬Phone Customer 8▬Last name customer 8▬Female▬1234567890-8▬emailCustomer8@email.com▬123456-8
+name customer 9▬Address-Customer 9▬Phone Customer 9▬Last name customer 9▬Male▬1234567890-9▬emailCustomer9@email.com▬123456-9
+name customer 10▬Address-Customer 10▬Phone Customer 10▬Last name customer 10▬Female▬1234567890-10▬emailCustomer10@email.com▬123456-10
