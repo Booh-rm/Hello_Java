@@ -1,0 +1,100 @@
+# SQL Statements
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+- Table creation:
+
+CREATE TABLE tb_customers (
+ 
+    id int AUTO_INCREMENT PRIMARY KEY,
+    id_customer varchar(15) NOT NULL,
+    name varchar(255) NOT NULL,
+    last_name varchar(255) NOT NULL,
+    address varchar(250) NOT NULL,
+    phone varchar(20) NOT NULL
+)
+
+CREATE TABLE tb_plans (
+ 
+    id int AUTO_INCREMENT PRIMARY KEY,
+    code_plan varchar(20) NOT NULL,
+    name varchar(12) NOT NULL,
+    description varchar(400) NOT NULL,
+    price double NOT NULL
+)
+
+CREATE TABLE tb_pets (
+ 
+    id int AUTO_INCREMENT PRIMARY KEY,
+    code_pet varchar(50) NOT NULL,
+    name varchar(100) NOT NULL,
+    age int NOT NULL,
+    weight double NOT NULL,
+    species varchar(8) NOT NULL,
+    id_owner_pet int NOT NULL,
+	id_plan int NOT NULL,
+	
+    FOREIGN KEY (id_owner_pet) REFERENCES tb_customers(id),
+	FOREIGN KEY (id_plan) REFERENCES tb_plans(id)
+)
+
+CREATE TABLE tb_monthly_fees (
+ 
+    id int AUTO_INCREMENT PRIMARY KEY,
+    fees int NOT NULL,
+    payment_method varchar (100) NOT NULL,
+    payment_method_id varchar (70) NOT NULL,
+    date_fees date DEFAULT NULL,
+    id_plan int NOT NULL,
+	id_pet int NOT NULL,
+    
+    FOREIGN KEY (id_plan) REFERENCES tb_plans(id),
+	FOREIGN KEY (id_pet) REFERENCES tb_pets(id)
+)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+- Data insertion:
+
+INSERT INTO `tb_customers` (`id_customer`, `name`, `last_name`, `address`, `phone`) VALUES
+('01234567891', 'Name customer 1', 'last name customer 1', 'address customer 1', '0011234567890'),
+('01234567892', 'Name customer 2', 'last name customer 2', 'address customer 2', '0021234567890'),
+('01234567893', 'Name customer 3', 'last name customer 3', 'address customer 3', '0031234567890'),
+('01234567894', 'Name customer 4', 'last name customer 4', 'address customer 4', '0041234567890'),
+('01234567895', 'Name customer 5', 'last name customer 5', 'address customer 5', '0051234567890'),
+('01234567896', 'Name customer 6', 'last name customer 6', 'address customer 6', '0061234567890'),
+('01234567897', 'Name customer 7', 'last name customer 7', 'address customer 7', '0071234567890'),
+('01234567898', 'Name customer 8', 'last name customer 8', 'address customer 8', '0081234567890'),
+('01234567899', 'Name customer 9', 'last name customer 9', 'address customer 9', '0091234567890'),
+('012345678910', 'Name customer 10', 'last name customer 10', 'address customer 1.', '00101234567890');
+
+INSERT INTO `tb_plans` (`code_plan`, `name`, `description`, `price`) VALUES
+('001', 'Wellness plan', 'Basic plan for the care of your pet', 100),
+('002', 'Elite plan', 'Elite plan for the care of your pet', 200),
+('003', 'Diamond plan', 'Diamond plan for the care of your pet', 300);
+
+INSERT INTO `tb_pets` (`code_pet`,`name`, `age`, `weight`, `species`, `id_owner_pet`, `id_plan`) VALUES
+('001','pet 1', 1, 1, 'Canine', 1, 1),
+('002','pet 2', 2, 2, 'Feline', 2, 2),
+('003','pet 3', 3, 3, 'Canine', 3, 3),
+('004','pet 4', 4, 4, 'Feline', 4, 1),
+('005','pet 5', 5, 5, 'Canine', 5, 2),
+('006','pet 6', 6, 6, 'Feline', 1, 3),
+('007','pet 7', 7, 7, 'Canine', 2, 1),
+('008','pet 8', 8, 8, 'Feline', 3, 2),
+('009','pet 9', 9, 9, 'Canine', 1, 3),
+('0010','pet 10', 10, 10, 'Feline', 2, 1);
+
+INSERT INTO `tb_monthly_fees` (`fees`, `payment_method`, `payment_method_id`, `date_fees`, `id_plan`, `id_pet`) VALUES
+(1, 'Credit / debit card', '001-011-111-01', '2021-08-13', 1, 1),
+(2, 'Bank transfer', '001-011-111-02', '2021-08-13', 2, 2),
+(3, 'Credit / debit card', '001-011-111-03', '2021-08-13', 3, 3),
+(4, 'Bank transfer', '001-011-111-04', '2021-08-13', 1, 4),
+(5, 'Credit / debit card', '001-011-111-05', '2021-08-13', 2, 5),
+(6, 'Bank transfer', '001-011-111-06', '2021-08-13', 3, 6),
+(7, 'Credit / debit card', '001-011-111-07', '2021-08-13', 1, 7),
+(8, 'Bank transfer', '001-011-111-08', '2021-08-13', 2, 8),
+(9, 'Credit / debit card', '001-011-111-09', '2021-08-13', 3, 9),
+(10, 'Bank transfer', '001-011-111-010', '2021-08-13', 1, 10);
+
+--------------------------------------------------------------------------------------------------------------------------------------
